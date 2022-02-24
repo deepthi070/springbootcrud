@@ -30,5 +30,15 @@ public class ProductService {
     public void delete(Integer id){
         prodRepo.deleteById(id);
     }
+    /*
+    public List<ProductEntity> findByItem(String item){
+        return prodRepo.findByItem(item);
+    }
+
+    public List<ProductEntity> getProductByPrice(Integer price){
+        return prodRepo.getProductByPrice(price);
+    }*/
+
+
 
 }

@@ -44,4 +44,13 @@ public class ProductEntity {
         this.item = item;
         this.price = price;
     }
+
+    @Override
+    public String toString() {
+        return "ProductEntity{" +
+                "id=" + id +
+                ", item='" + item + '\'' +
+                ", price=" + price +
+                '}';
+    }
 }
