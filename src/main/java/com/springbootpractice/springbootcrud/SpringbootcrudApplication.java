@@ -40,6 +40,11 @@ public class SpringbootcrudApplication implements CommandLineRunner {
 		itemCost.forEach(item2-> System.out.println(item2));
 
 
+		List<ProductEntity> item = productRepo.findProductByItemAndPrice("samsung",900);
+		System.out.println("Item with price:");
+		item.forEach(item3-> System.out.println(item3));
+
+
 
 	}
 

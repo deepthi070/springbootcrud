@@ -15,4 +15,8 @@ public interface ProductRepository extends JpaRepository<ProductEntity,Integer> 
     @Query(value = "select * from product p where p.price >:price",nativeQuery = true)
     public List<ProductEntity> getProductByPrice(@Param("price") float price);
 
+    @Query(value = "select * from product p where p.price-:price and p.item=:item",nativeQuery = true)
+    public List<ProductEntity> findProductByItemAndPrice(@Param("item") String item,@Param("price") float price);
+
+
 }
